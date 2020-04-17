@@ -15,4 +15,4 @@ sizes defined in `resume.cls` can be customized.
 
 ### License
 
-Please see LICENSE file. (cloned from [@treyhunner](https://github.com/treyhunner))
+Please see LICENSE file. (cloned from [@championshuttler](https://github.com/championshuttler))
