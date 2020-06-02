@@ -104,20 +104,38 @@
   \end{list}
   \vspace{0.1em}
 }
+%----------------------------------------------------------------------------------------
+%	SECTION FORMATTING
+%----------------------------------------------------------------------------------------
 
-\newenvironment{rEducationSection}[3]{
+\newenvironment{rEducationSection}[5]{
   %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
   %%    School name (bold)                  Dates (regular)    %%
   %%    Title (emphasis)                      GPA (regular)    %%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  {\bf #1}                 \hfill                  {#2} \\
-  {\em #3}
-  \smallskip
+  {\bf #1}                 \hfill                  {\em #2}
+  \ifthenelse{\equal{#3}{}}{}{
+  \\
+  {\em #3}                 \hfill                  { #4}
+  }\smallskip
+  \begin{list}{$\cdot$}{\leftmargin=1.0em}
+  \itemsep -0.5em \vspace{-0.5em}
+  {#5}
+  \end{list}
+  \vspace{0.1em}
 }
 
-%----------------------------------------------------------------------------------------
-%	SECTION FORMATTING
-%----------------------------------------------------------------------------------------
+
+\newenvironment{rSkillSection}[0]{
+  %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
+  %%    Project (bold)                        URL (emphasis)   %%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace{0.5em}
+  \begin{list}{$\cdot$}{\leftmargin=1.0em}
+  \itemsep -0.5em \vspace{-0.5em}
+  }{
+  \end{list}
+}
 
 \newenvironment{rWorkSection}[5]{
   %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
