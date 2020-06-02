@@ -119,7 +119,7 @@
   {\em #3}                 \hfill                  { #4}
   }\smallskip
   \begin{list}{$\cdot$}{\leftmargin=1.0em}
-  \itemsep -0.5em \vspace{-0.5em}
+  \itemsep -0.5em \vspace{-0.1em}
   {#5}
   \end{list}
   \vspace{0.1em}
@@ -132,7 +132,7 @@
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \vspace{0.5em}
   \begin{list}{$\cdot$}{\leftmargin=1.0em}
-  \itemsep -0.5em \vspace{-0.5em}
+ \itemsep -0.5em \vspace{-0.5em}
   }{
   \end{list}
 }
